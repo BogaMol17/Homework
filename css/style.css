@@ -1,0 +1,336 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Black.woff2") format("woff2"), url("../fonts/Gilroy-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	font-size: 14px;
+	line-height: 1;
+}
+/* -------------- */
+body {
+	font-family: Gilroy;
+	background: url(../img/like.png) center / cover no-repeat fixed;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1160px;
+	padding: 0px 10px;
+	margin: 0 auto;
+}
+.header__top {
+	padding: 20px 0px 0px 0px;
+	margin: 0px 0px 40px 0px;
+}
+.header__logo {
+	font-weight: 700;
+	font-size: 52px;
+	color: #e1e1e1;
+	text-transform: uppercase;
+	border-right: 2px solid #89afef;
+	display: inline-block;
+	padding: 0px 18px 0px 0px;
+}
+.header__about {
+	display: inline-block;
+	max-width: 180px;
+	margin: 0px 70px 0px 25px;
+	font-weight: 500;
+	color: #5d5d5d;
+}
+.header__social {
+	display: inline-block;
+	vertical-align: top;
+	padding: 7px 0px 0px 0px;
+	margin: 0px 80px 0px 0px;
+}
+.header__link {
+	width: 43px;
+	height: 43px;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	padding: 12px;
+	margin: 0px 18px 0px 0px;
+}
+.header__linkw {
+	background: url(../img/whatsapp.png) center no-repeat;
+	background-color: #2dd038;
+	box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+}
+.header__linkv {
+	background: url(../img/viber.png) center no-repeat;
+	background-color: #7b519d;
+	box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+}
+.header__linkt {
+	background: url(../img/tel.png) center no-repeat;
+	background-color: #5bbaf0;
+	box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+}
+.btn {
+	max-width: 195px;
+	padding: 11px 20px;
+	display: inline-block;
+	color: #fff;
+}
+.header__call {
+	display: inline-block;
+}
+.header__contacts {
+	display: inline-block;
+	text-align: right;
+	margin: 0px 30px 0px 0px;
+}
+.header__tel {
+	font-weight: 700;
+	font-size: 20px;
+	color: #333333;
+	display: block;
+	margin: 0px 0px 5px 0px;
+}
+.header__tel span {
+	background: url(../img/call.png) left center no-repeat;
+	padding: 0px 0px 0px 25px;
+}
+.header__mail {
+	font-size: 17px;
+	font-weight: 500;
+	color: #333333;
+	display: block;
+}
+.header__mail span {
+	background: url(../img/mail.png) left center no-repeat;
+	padding: 0px 0px 0px 26px;
+}
+.header__button {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 0px 0px 0px;
+}
+.header__btn {
+	background: linear-gradient(90deg, #f6bd60 0%, #e88952 100%);
+	box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+	border-radius: 3px;
+}
+
+.header__bottom {
+	margin: 0px 0px 100px 0px;
+}
+
+.menu__list li {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0px 43px 0px 0px;
+	font-size: 16px;
+}
+.menu__list a {
+	color: #333333;
+}
+
+.block__bg {
+	background: url(../img/Group\ 5.png) right top no-repeat;
+	background-color: #fafafb;
+}
+.content__text {
+	font-size: 40px;
+	line-height: 51px;
+	font-weight: 900;
+	color: #333333;
+	display: inline-block;
+	max-width: 680px;
+}
+.content__text span {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0px 5px 0px 0px;
+}
+.content__button {
+	margin: 40px 0px 0px 0px;
+}
+.content__btn {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 19px;
+	width: 211px;
+	padding: 16px 0px;
+	background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
+	box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+	border-radius: 3px;
+	text-align: center;
+}
+.content__img {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 0px 0px 0px;
+}
+.content__img img {
+}
+.space {
+	height: 300px;
+}
+
+/*=================================================================================*/
+.block {
+	background-color: #fff;
+}
+.container {
+}
+.block__columns {
+	background: url(../img/bg.png);
+	min-height: 370px;
+	padding: 40px 0px 60px 40px;
+}
+.block__price {
+	font-size: 15px;
+	display: inline-block;
+	max-width: 280px;
+	padding: 0px 10px;
+	vertical-align: top;
+	margin: 0px 100px 0px 0px;
+	text-align: center;
+}
+.price {
+	margin: 10px 0px 0px 0px;
+}
+.price span {
+	font-weight: 800;
+	font-size: 36px;
+	color: #87b0ee;
+}
+.block__price p {
+	line-height: 24px;
+}
+.block__price span {
+	font-weight: 700;
+}
+
+.block__info {
+	display: inline-block;
+	font-size: 17px;
+	max-width: 500px;
+	line-height: 26px;
+}
+.block__tittle {
+	font-weight: 800;
+	font-size: 40px;
+	margin: 0px 0px 30px 0px;
+	line-height: 51px;
+}
+.block__text {
+	padding: 35px 10px;
+	font-size: 18px;
+}
+.block__subtittle {
+	font-size: 24px;
+	font-weight: 800;
+	margin: 30px 0px 20px 0px;
+}
+.title {
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 24px;
+	color: #333333;
+	margin: 25px 0px 15px 0px;
+}
+.block__list {
+	padding: 0px 0px 0px 60px;
+}
+.block__list li {
+	background: url(../img/dotted.png) left no-repeat;
+	padding: 0px 0px 0px 25px;
+	margin: 0px 0px 20px 0px;
+}
+.block__btn {
+	margin: 30px 0px 0px 0px;
+	font-size: 17px;
+	font-weight: 700;
+	display: inline-block;
+	padding: 16px 50px;
+	background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%);
+	box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+	border-radius: 3px;
+}
+.border {
+	margin: 0px 0px 25px 0px;
+}
+.border span {
+	text-align: center;
+	width: 128px;
+	height: 2px;
+	background: #87b0ee;
+	display: inline-block;
+}
